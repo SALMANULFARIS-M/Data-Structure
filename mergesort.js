@@ -21,7 +21,7 @@ function merge(l, r) {
 
 //Big O= O(nlogn)
 
-const array = [10, 5, 6];
+const array = [10, 5, 6,9,24,0];
 const a = mergeSort(array);
 
 console.log(a);
