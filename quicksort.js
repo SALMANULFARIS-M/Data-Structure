@@ -17,7 +17,7 @@ function quickSort(arr) {
 
 //Worst case = O(n^2)
 //Avg case = O(logn)
-const array = [10, 5, 6, 3, 8, 2, 1];
+const array = [10, 5, 6, 3, 8, 2, 1,0];
 const a = quickSort(array);
 
 console.log(a);
