@@ -12,7 +12,7 @@ function insertionSort(arr) {
 }
 // Big O = O(n^2)
 
-const array = [10, 5, 6, 3, 8, 2, 1];
+const array = [10, 5, 6, 3, 8,];
 const a = insertionSort(array);
 
 console.log(a);
