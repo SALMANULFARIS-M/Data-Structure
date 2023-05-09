@@ -162,8 +162,8 @@ const list = new LinkedList();
 // console.log("empty", list.isEmpty());
 // console.log("size", list.getSize());
 
+list.prepend(5);
 list.prepend(10);
-list.prepend(20);
 list.prepend(30);
 list.append(50);
 list.insert(70, 3);
@@ -172,5 +172,5 @@ list.removeValue(50);
 console.log(list.search(10));
 list.print();
 
-list.reverse()
+list.reverse();
 list.print();
