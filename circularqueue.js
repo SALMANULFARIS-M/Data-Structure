@@ -65,7 +65,8 @@ queue.enqueue(20);
 queue.enqueue(30);
 queue.enqueue(40);
 queue.enqueue(50);
-
+queue.dequeue();
+queue.enqueue(50);
 console.log(queue.isFull());
 queue.print();
 
