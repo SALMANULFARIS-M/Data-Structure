@@ -10,7 +10,6 @@ class LinkedList {
     this.head = null;
     this.tail = null;
     this.size = 0;
-
   }
 
   isEmpty() {
@@ -140,7 +139,7 @@ class LinkedList {
       prev = curr;
       curr = next;
     }
-    return this.head = prev;
+    return (this.head = prev);
   }
 
   print() {

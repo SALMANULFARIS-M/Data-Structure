@@ -31,6 +31,5 @@ stack.push(30);
 stack.push(40);
 console.log(stack.peek());
 stack.pop();
-stack.pop();
 stack.print();
 console.log(stack.isEmpty());

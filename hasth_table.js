@@ -42,7 +42,6 @@ class HashTable {
     const bucket = this.table[index]
     if (bucket) {
         const sameKeyItem = bucket.find((item) => item[0] === key);
-        console.log(sameKeyItem,"Sale");
       if (sameKeyItem) {
         bucket.splice(bucket.indexOf(sameKeyItem),1)
       }
