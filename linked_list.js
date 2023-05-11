@@ -173,3 +173,15 @@ list.print();
 
 list.reverse();
 list.print();
+
+class Stack {
+  constructor(size) {
+    this.LinkedList = new LinkedList(size);
+    this.size = size;
+    this.top = 0;
+  }
+
+  push(value) {
+    this.LinkedList.append(value);
+  }
+}
