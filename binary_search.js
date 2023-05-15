@@ -10,9 +10,11 @@ class BinarySearchTree {
   constructor() {
     this.root = null;
   }
+
   isEmpty() {
     return this.root === null;
   }
+
   insert(value) {
     const node = new Node(value);
     if (this.isEmpty()) {
@@ -21,6 +23,7 @@ class BinarySearchTree {
       this.insertNode(this.root, node);
     }
   }
+
   insertNode(root, node) {
     if (node.value < root.value) {
       if (root.left === null) {
@@ -36,6 +39,21 @@ class BinarySearchTree {
       }
     }
   }
+
+  search(root, value) {
+    if (!root) {
+      return false;
+    } else {
+      if (root.value === value) {
+        return true;
+      } else if (value < root.value) {
+        return this.search(root.left, value);
+      } else {
+        return this.search(root.right, value);
+      }
+    }
+  }
+
 }
 
 const bst = new BinarySearchTree();
@@ -46,3 +64,6 @@ bst.insert(10);
 bst.insert(5);
 bst.insert(11);
 console.log(bst.isEmpty());
+console.log(bst.search(bst.root ,10));
+console.log(bst.search(bst.root ,7));
+console.log(bst.search(bst.root ,11));
