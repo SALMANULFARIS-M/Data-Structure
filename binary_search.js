@@ -70,14 +70,14 @@ class BinarySearchTree {
       this.inOrder(root.right);
     }
   }
-  // postOrder(root){
-  //   if (root) {
+  postOrder(root){
+    if (root) {
 
-  //     this.inOrder(root.left);
-  //     this.inOrder(root.right);
-  //     console.log(root.value);
-  //   }
-  // }
+      this.inOrder(root.left);
+      this.inOrder(root.right);
+      console.log(root.value);
+    }
+  }
 }
 
 const bst = new BinarySearchTree();
