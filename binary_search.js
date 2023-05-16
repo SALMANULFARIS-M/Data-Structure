@@ -62,22 +62,52 @@ class BinarySearchTree {
     }
   }
 
-  inOrder(root){
+  inOrder(root) {
     if (root) {
-
       this.inOrder(root.left);
       console.log(root.value);
       this.inOrder(root.right);
     }
   }
-  postOrder(root){
-    if (root) {
 
+  postOrder(root) {
+    if (root) {
       this.inOrder(root.left);
       this.inOrder(root.right);
       console.log(root.value);
     }
   }
+
+  levelOrder() {
+    const queue = [];
+    queue.push(this.root);
+    while (queue.length) {
+      let curr = queue.shift();
+      console.log(curr.value);
+      if (curr.left) {
+        queue.push(curr.left);
+      }
+      if (curr.right) {
+        queue.push(curr.right);
+      }
+    }
+  }
+
+  // min(root) {
+  //   if (!root.left) {
+  //     return root.value;
+  //   } else {
+  //     return this.min(root.left);
+  //   }
+  // }
+
+  // max(root) {
+  //   if (!root.right) {
+  //     return root.value;
+  //   } else {
+  //     return this.min(root.right);
+  //   }
+  // }
 }
 
 const bst = new BinarySearchTree();
@@ -87,9 +117,11 @@ console.log(bst.isEmpty());
 bst.insert(10);
 bst.insert(5);
 bst.insert(11);
-bst.insert(3)
+bst.insert(3);
 console.log(bst.isEmpty());
 console.log(bst.search(bst.root, 10));
 console.log(bst.search(bst.root, 7));
 console.log(bst.search(bst.root, 11));
 
+bst.levelOrder();
+console.log(bst.min(bst.root),"kddd");
