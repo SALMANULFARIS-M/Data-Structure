@@ -93,21 +93,21 @@ class BinarySearchTree {
     }
   }
 
-  // min(root) {
-  //   if (!root.left) {
-  //     return root.value;
-  //   } else {
-  //     return this.min(root.left);
-  //   }
-  // }
+  min(root) {
+    if (!root.left) {
+      return root.value;
+    } else {
+      return this.min(root.left);
+    }
+  }
 
-  // max(root) {
-  //   if (!root.right) {
-  //     return root.value;
-  //   } else {
-  //     return this.min(root.right);
-  //   }
-  // }
+  max(root) {
+    if (!root.right) {
+      return root.value;
+    } else {
+      return this.min(root.right);
+    }
+  }
 }
 
 const bst = new BinarySearchTree();
