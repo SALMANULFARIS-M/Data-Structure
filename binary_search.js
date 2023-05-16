@@ -62,14 +62,14 @@ class BinarySearchTree {
     }
   }
 
-  // inOrder(root){
-  //   if (root) {
+  inOrder(root){
+    if (root) {
 
-  //     this.inOrder(root.left);
-  //     console.log(root.value);
-  //     this.inOrder(root.right);
-  //   }
-  // }
+      this.inOrder(root.left);
+      console.log(root.value);
+      this.inOrder(root.right);
+    }
+  }
   // postOrder(root){
   //   if (root) {
 
