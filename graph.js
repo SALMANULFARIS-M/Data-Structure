@@ -54,9 +54,9 @@ class Graph {
     }
   }
 
-//   hasEdge(v1, v2) {
-//     return this.adjacencyList[v1].has(v2) && this.adjacencyList[v2].has(v1);
-//   }
+  hasEdge(v1, v2) {
+    return this.adjacencyList[v1].has(v2) && this.adjacencyList[v2].has(v1);
+  }
 }
 
 const graph = new Graph();
