@@ -38,15 +38,15 @@ class Graph {
     this.adjacencyList[v2].delete(v1);
   }
 
-//   removeVertex(ver) {
-//    if (!this.adjacencyList[ver]) {
-//     return
-//    }
-//    for (let adjacentVertex of this.adjacencyList[ver]) {
-//     this.removeEdge(ver,adjacentVertex)
-//    }
-//    delete this.adjacencyList[ver]
-//   }
+  removeVertex(ver) {
+   if (!this.adjacencyList[ver]) {
+    return
+   }
+   for (let adjacentVertex of this.adjacencyList[ver]) {
+    this.removeEdge(ver,adjacentVertex)
+   }
+   delete this.adjacencyList[ver]
+  }
 
 //   display() {
 //     for (let vertex in this.adjacencyList) {
