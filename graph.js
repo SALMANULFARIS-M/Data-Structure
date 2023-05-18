@@ -22,16 +22,16 @@ class Graph {
       this.adjacencyList[vertex] = new Set();
     }
   }
-//   addEdge(vertex1, vertex2) {
-//     if (!this.adjacencyList[vertex1]) {
-//       this.addVertex(vertex1);
-//     }
-//     if (!this.adjacencyList[vertex2]) {
-//       this.addVertex(vertex2);
-//     }
-//     this.adjacencyList[vertex1].add(vertex2);
-//     this.adjacencyList[vertex2].add(vertex1);
-//   }
+  addEdge(vertex1, vertex2) {
+    if (!this.adjacencyList[vertex1]) {
+      this.addVertex(vertex1);
+    }
+    if (!this.adjacencyList[vertex2]) {
+      this.addVertex(vertex2);
+    }
+    this.adjacencyList[vertex1].add(vertex2);
+    this.adjacencyList[vertex2].add(vertex1);
+  }
 
 //   removeEdge(v1, v2) {
 //     this.adjacencyList[v1].delete(v2);
