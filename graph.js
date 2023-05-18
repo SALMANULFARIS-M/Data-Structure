@@ -48,11 +48,11 @@ class Graph {
    delete this.adjacencyList[ver]
   }
 
-//   display() {
-//     for (let vertex in this.adjacencyList) {
-//       console.log(vertex + "=>" + [...this.adjacencyList[vertex]]);
-//     }
-//   }
+  display() {
+    for (let vertex in this.adjacencyList) {
+      console.log(vertex + "=>" + [...this.adjacencyList[vertex]]);
+    }
+  }
 
 //   hasEdge(v1, v2) {
 //     return this.adjacencyList[v1].has(v2) && this.adjacencyList[v2].has(v1);
