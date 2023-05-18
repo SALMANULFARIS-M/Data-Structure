@@ -33,10 +33,10 @@ class Graph {
     this.adjacencyList[vertex2].add(vertex1);
   }
 
-//   removeEdge(v1, v2) {
-//     this.adjacencyList[v1].delete(v2);
-//     this.adjacencyList[v2].delete(v1);
-//   }
+  removeEdge(v1, v2) {
+    this.adjacencyList[v1].delete(v2);
+    this.adjacencyList[v2].delete(v1);
+  }
 
 //   removeVertex(ver) {
 //    if (!this.adjacencyList[ver]) {
