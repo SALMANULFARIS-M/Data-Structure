@@ -105,7 +105,7 @@ class BinarySearchTree {
     if (!root.right) {
       return root.value;
     } else {
-      return this.min(root.right);
+      return this.max(root.right);
     }
   }
 
