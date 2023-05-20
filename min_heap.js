@@ -47,6 +47,7 @@ class MinHeap {
       this.shiftUp(this.minHeap.length - 1);
     }
     remove() {
+      // romevo from top and shiftdown
       this.swap(0, this.minHeap.length - 1);
       this.minHeap.pop();
       this.shiftDown(0);
