@@ -2,8 +2,8 @@ class MinHeap {
     constructor() {
       this.minHeap = [];
     }
-    buildUp(array) {
-      this.minHeap = [...array];
+    buildUp(arr) {
+      this.minHeap = [...arr];
       let endIdx = this.minHeap.length - 1;
       for (let i = this.parent(endIdx); i >= 0; i--) {
         this.shiftDown(i);
