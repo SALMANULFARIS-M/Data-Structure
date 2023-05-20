@@ -9,10 +9,10 @@ class MinHeap {
         this.shiftDown(i);
       }
     }
-    shiftDown(currentIdx,endIdx = this.minHeap.length - 1) {
-      let leftIdx = this.leftChild(currentIdx);
+    shiftDown(currIdx,endIdx = this.minHeap.length - 1) {
+      let leftIdx = this.leftChild(currIdx);
       while (leftIdx <= endIdx) {
-        let rightIdx = this.rightChild(currentIdx);
+        let rightIdx = this.rightChild(currIdx);
         let idxToShift;
         if (
           rightIdx <= endIdx &&
@@ -22,10 +22,10 @@ class MinHeap {
         } else {
           idxToShift = leftIdx;
         }
-        if (this.minHeap[currentIdx] > this.minHeap[idxToShift]) {
-          this.swap(currentIdx, idxToShift);
-          currentIdx = idxToShift;
-          leftIdx = this.leftChild(currentIdx);
+        if (this.minHeap[currIdx] > this.minHeap[idxToShift]) {
+          this.swap(currIdx, idxToShift);
+          currIdx = idxToShift;
+          leftIdx = this.leftChild(currIdx);
         }else{
           return
         }
