@@ -42,8 +42,8 @@ class MinHeap {
         parentIdx = this.parent(currIdx);
       }
     }
-    insert(value) {
-      this.minHeap.push(value);
+    insert(val) {
+      this.minHeap.push(val);
       this.shiftUp(this.minHeap.length - 1);
     }
     remove() {
