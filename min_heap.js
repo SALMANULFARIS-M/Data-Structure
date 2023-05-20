@@ -67,8 +67,8 @@ class MinHeap {
       return 2 * currentIdx + 2;
     }
     display() {
-      for (let i = 0; i < this.minHeap.length; i++) {
-        console.log(this.minHeap[i]);
+      for (let j = 0; j < this.minHeap.length; j++) {
+        console.log(this.minHeap[j]);
       }
     }
   }
