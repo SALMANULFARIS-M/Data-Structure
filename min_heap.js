@@ -31,15 +31,15 @@ class MinHeap {
         }
       }
     }
-    shiftUp(currentIdx) {
-      let parentIdx = this.parent(currentIdx);
+    shiftUp(currIdx) {
+      let parentIdx = this.parent(currIdx);
       while (
-        currentIdx > 0 &&
-        this.minHeap[parentIdx] > this.minHeap[currentIdx]
+        currIdx > 0 &&
+        this.minHeap[parentIdx] > this.minHeap[currIdx]
       ) {
-        this.swap(currentIdx, parentIdx);
-        currentIdx = parentIdx;
-        parentIdx = this.parent(currentIdx);
+        this.swap(currIdx, parentIdx);
+        currIdx = parentIdx;
+        parentIdx = this.parent(currIdx);
       }
     }
     insert(value) {
