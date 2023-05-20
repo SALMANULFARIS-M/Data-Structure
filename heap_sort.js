@@ -1,4 +1,4 @@
-class maxHeap {
+class HeapSort {
     constructor() {
       this.maxHeap = [];
     }
@@ -30,23 +30,6 @@ class maxHeap {
           }
       }
     }
-    shiftUp(currentIdx){
-      let parentIdx = this.parent(currentIdx)
-      while(currentIdx >0 && this.maxHeap[parentIdx]>this.maxHeap[currentIdx]){
-          this.swap(currentIdx,parentIdx)
-          currentIdx = parentIdx
-          parentIdx = this.parent(currentIdx)
-      }
-    }
-    insert(value){
-      this.maxHeap.push(value)
-      this.shiftUp(this.maxHeap.length-1)
-    }
-    remove(){
-      this.swap(0,this.maxHeap.length-1)
-      this.maxHeap.pop()
-      this.shiftDown(0)
-    }
     swap(index1,index2){
       let temp = this.maxHeap[index1]
       this.maxHeap[index1] = this.maxHeap[index2]
@@ -70,13 +53,8 @@ class maxHeap {
     rightChild(currentIdx) {
       return 2 * currentIdx + 2;
     }
-    display(){
-      for(let i=0;i<this.maxHeap.length;i++){
-          console.log(this.maxHeap[i]);
-      }
-    }
   }
-  const heap = new maxHeap()
+  const heap = new HeapSort()
   const arr =[35,2,1,5,63,73,23]
   
   heap.buildUp(arr)
