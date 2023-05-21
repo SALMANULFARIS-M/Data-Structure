@@ -24,6 +24,7 @@ class Graph {
     }
   }
   addEdge(vertex1, vertex2) {
+    // add edge
     if (!this.adjacencyList[vertex1]) {
       this.addVertex(vertex1);
     }
