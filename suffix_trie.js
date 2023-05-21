@@ -10,6 +10,7 @@ class SuffixTrie{
         this.root = new TrieNode(null)
     }
     insert(word){
+        // inserting a word in suffix trie
         for(let i=0;i<word.length;i++){
             this.suffix(i,word)
         }
