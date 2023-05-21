@@ -35,6 +35,7 @@ class prefixTrie{
         return true
     }
     searchWithprefix(prefix){
+        // search using a letter or prefix
         let curr = this.root
         const result =[];
         for(let i=0;i<prefix.length;i++){
