@@ -11,6 +11,7 @@ class prefixTrie{
         this.root = new TrieNode(null)
     }
     insert(word){
+        //inserting a word in trie
         let curr = this.root
         for(let i=0;i<word.length;i++){
             let char =word[i]
