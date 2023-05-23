@@ -18,6 +18,7 @@ class Graph{
         this.list[edge].add(vertex)
     }
     removeEdge(vertex,edge){
+        // remove edge
         this.list[vertex].delete(edge)
         this.list[edge].delete(vertex)
     }
