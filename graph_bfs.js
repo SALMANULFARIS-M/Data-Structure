@@ -36,6 +36,7 @@ class Graph{
         }
     }
     dfs(vertex){
+        // graph dfs
         let visited = new Set()
         this.dfsHelper(vertex,visited)
     }
