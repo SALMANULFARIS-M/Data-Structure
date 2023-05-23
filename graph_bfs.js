@@ -23,6 +23,7 @@ class Graph{
         this.list[edge].delete(vertex)
     }
     removeVertex(vertex){
+        // remove vertex
         if(!this.list[vertex]){
             return null
         }
