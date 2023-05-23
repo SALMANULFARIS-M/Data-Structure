@@ -41,6 +41,7 @@ class Graph{
         this.dfsHelper(vertex,visited)
     }
     dfsHelper(vertex,visited){
+        // graph bfs
         visited.add(vertex)
         console.log(visited);
         for(let vertices of this.list[vertex]){
